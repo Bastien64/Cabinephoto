@@ -1,0 +1,329 @@
+#background-video,
+#background-video2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+
+/* PREMIER ECRAN MARIAGE */
+
+@media only screen and (min-width: 767px) {
+/*ANIMATION*/
+.animated-from-right {
+    opacity: 0; /* Commence par être invisible */
+    transform: translateX(100%); /* Décalage initial vers la droite */
+    transition: opacity 5s, transform 5s; /* Animation de 1 seconde avec transition */
+}
+
+/* Lorsque l'élément est dans la vue (scroll), appliquez l'animation */
+.animated-from-right.animate {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#background-video {
+    transition: filter 10s ease;
+}
+
+#background-video2 {
+    transition: filter 5s ease;
+}
+
+
+.blurred {
+    filter: brightness(10%); /* Ajustez la valeur pour contrôler l'effet de blanchiment */
+}
+/*FIN ANIMATION*/
+
+/*NAVBAR*/
+
+.navbar-brand {
+    margin-left: 40%!important;
+}
+/*FIN NAVBAR*/
+.premiereecran {
+    width: 100%;
+    height: 150vh;
+    position: relative;
+}
+
+.div1 {
+    padding: 2%;
+    width: 100%;
+    height: 115vh;
+    background-color: #ffffff;
+    opacity: 1;
+    top: 0;
+    left: 0;
+
+}
+
+
+.div11 {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.imagediv11 {
+    width: 70%;
+    height: auto;
+    margin-left: 20%;
+}
+
+.vertical-linediv1 {
+        border-right: 10px solid #F69515; /* Couleur et épaisseur de la ligne */
+        height: 300px; /* Hauteur fixe de la ligne */
+        margin: 0 20px; /* Marge à gauche et à droite de la ligne */
+    
+}
+.imagediv12 {
+    width: 30%;
+    height: auto;
+    margin-top: 2%;
+    margin-left: 2%;
+    border: 2px solid white; /* Bordure blanche de 2px */
+    padding: 5px;
+    background-color: white;
+    box-shadow: 1px 2px 2px 2px #00000028; /* Ombre portée de 2px */
+}
+.rotate-left {
+    transform: rotate(-20deg); /* Rotation de -20 degrés (gauche) */
+}
+.rotate-center {
+    transform: rotate(-20deg); /* Rotation de -20 degrés (gauche) */
+}
+.rotate-right {
+    transform: rotate(20deg); /* Rotation de 20 degrés (droite) */
+}
+
+.div2 {
+    margin-top: 40%;
+    width: 100%;
+    height: 50vh;
+    background-color: #ffffff;
+    opacity: 1;
+    position: absolute;
+    top: 70vh;
+    display: flex;
+
+
+}
+.div21 {
+    display: flex;
+    flex-direction: row; /* Ajustement pour aligner le contenu verticalement */
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Centrage du texte */
+    margin-left: 10%;
+}
+.imagediv21{
+    width: 40%;
+    height: auto;
+
+}
+
+.textdiv21 {
+    width: 50%;
+}
+
+/* SECOND ECRAN MILLIONAIRE */
+.secondecran {
+    width: 100%;
+    height: 150vh;
+    position: relative;
+}
+
+
+.div3 {
+    margin-top: 10%;
+    width: 100%;
+    height: 50vh;
+    background-color: #ffffff;
+    opacity: 1;
+    position :relative;
+    top: 80vh;
+    left: 0;
+
+}
+
+
+.div4 {
+    margin-top: 20%;
+    width: 100%;
+    height: 50vh;
+    background-color: #ffffff;
+    opacity: 1;
+    position: absolute;
+    top: 80vh;
+    left: 0;
+
+}}
+@media only screen and (max-width: 767px) { 
+
+/*ANIMATION*/
+.animated-from-right {
+    opacity: 0; /* Commence par être invisible */
+    transform: translateX(100%); /* Décalage initial vers la droite */
+    transition: opacity 5s, transform 5s; /* Animation de 1 seconde avec transition */
+}
+
+/* Lorsque l'élément est dans la vue (scroll), appliquez l'animation */
+.animated-from-right.animate {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#background-video {
+    transition: filter 10s ease;
+}
+
+#background-video2 {
+    transition: filter 5s ease;
+}
+
+
+.blurred {
+    filter: brightness(10%); /* Ajustez la valeur pour contrôler l'effet de blanchiment */
+}
+/*FIN ANIMATION*/
+    .animated-from-right {
+        opacity: 0; /* Commence par être invisible */
+        transform: translateX(50px); /* Décalage initial vers la droite */
+        transition: opacity 1s, transform 1s; /* Animation de 1 seconde avec transition */
+    }
+    
+    /* Lorsque l'élément est dans la vue (scroll), appliquez l'animation */
+    .animated-from-right.animate {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    /*FIN ANIMATION*/
+    .premiereecran {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+    
+    .div1 {
+        padding: 5%;
+        width: 100%;
+        height: 50vh;
+        background-color: #ffffff;
+        opacity: 1;
+        top: 0;
+        left: 0;
+    
+    }
+    
+    
+    .div11 {
+        display: flex;
+        flex-direction: row;
+    
+    }
+    
+    .imagediv11 {
+        width: 70%;
+        height: auto;
+        margin-left: 20%;
+    }
+    
+    .vertical-linediv1 {
+            border-right: 5px solid #F69515; /* Couleur et épaisseur de la ligne */
+            height: 100px; /* Hauteur fixe de la ligne */
+            margin: 0 20px; /* Marge à gauche et à droite de la ligne */
+        
+    }
+    .imagediv12 {
+        width: 30%;
+        height: auto;
+        margin-top: 8%;
+        margin-left: 2%;
+        border: 2px solid white; /* Bordure blanche de 2px */
+        padding: 5px;
+        background-color: white;
+        box-shadow: 1px 2px 2px 2px #00000028; /* Ombre portée de 2px */
+    }
+    .rotate-left {
+        transform: rotate(-20deg); /* Rotation de -20 degrés (gauche) */
+    }
+    .rotate-center {
+        transform: rotate(-20deg); /* Rotation de -20 degrés (gauche) */
+    }
+    .rotate-right {
+        transform: rotate(20deg); /* Rotation de 20 degrés (droite) */
+    }
+    
+    .div2 {
+        margin-top: 1%;
+        width: 100%;
+        height: 100vh;
+        background-color: #ffffff;
+        opacity: 1;
+        position: absolute;
+        top: 70vh;
+        display: flex;
+    
+    
+    }
+    .div21 {
+        display: flex;
+        flex-direction: column  ; /* Ajustement pour aligner le contenu verticalement */
+        justify-content: center;
+        align-items: center;
+        text-align: center; /* Centrage du texte */
+        margin-left: 2%;
+    }
+
+    .textdiv21 {
+        width: 80%;
+    }
+    .imagediv21{
+        width: 40%;
+        height: auto;
+    
+    }
+    
+    
+    /* SECOND ECRAN MILLIONAIRE */
+    .secondecran {
+        width: 100%;
+        height: 150vh;
+        position: relative;
+    }
+    
+    
+    .div3 {
+        margin-top: 10%;
+        width: 100%;
+        height: 50vh;
+        background-color: #ffffff;
+        opacity: 1;
+        position :relative;
+        top: 80vh;
+        left: 0;
+    
+    }
+    
+    
+    .div4 {
+        margin-top: 20%;
+        width: 100%;
+        height: 50vh;
+        background-color: #ffffff;
+        opacity: 1;
+        position: absolute;
+        top: 80vh;
+        left: 0;
+    
+    }}
