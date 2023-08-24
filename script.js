@@ -36,6 +36,14 @@ const questions = document.querySelectorAll('.question');
 questions.forEach(question => {
     question.addEventListener('click', () => {
         const answer = question.nextElementSibling;
+        const allAnswers = document.querySelectorAll('.answer');
+        
+        allAnswers.forEach(a => {
+            if (a !== answer) {
+                a.classList.add('hidden');
+            }
+        });
+        
         answer.classList.toggle('hidden');
     });
 });
