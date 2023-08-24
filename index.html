@@ -4,19 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Louez une borne à selfie Photobooth à Brive, Ussel et Limoges pour des événements spéciaux. Des photos souvenirs uniques pour mariages, inaugurations, soirées d'entreprise, etc.">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Borne Selfie Image'in</title>
+    <title>Borne à selfie Photobooth - Location à Brive, Ussel et Limoges</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-light" style="background-color: #575A6D !important;">
+    <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
             <nav class="navbar bg-light" style="background-color: #575A6D !important;">
                 <div class="container">
                     <a class="navbar-brand " href="#">
-                        <img src="photos/borneselfietransparent.png" alt="Bootstrap" width="120" height="120">
+                        <img src="photos/borneselfietransparent.png" alt="Bootstrap" width="80" height="80">
                     </a>
                 </div>
             </nav>
@@ -27,16 +29,17 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto"> <!-- Utilisation de la classe "mx-auto" pour centrer -->
                     <li class="nav-item h4 font-weight-bol" style="margin-right: 60px;">
-                        <a class="nav-link text-white" aria-current="page" href="#">LA BORNE A SELFIE</a>
+                        <a class="nav-link text-white" aria-current="page" href="#laborne">LA BORNE A SELFIE</a>
                     </li>
-                    <li class="nav-item h4 font-weight-bold" style="margin-right: 60px;">
-                        <a class="nav-link text-white" href="#">TARIFS</a>
-                    </li>
+
                     <li class="nav-item h4 " style="margin-right: 60px;">
-                        <a class="nav-link text-white" href="#">FAQ</a>
+                        <a class="nav-link text-white" href="#FAQ">FAQ</a>
+                    </li>
+                    <li class="nav-item h4" style="margin-right: 60px;">
+                        <a class="nav-link text-white" href="#reservation">RESERVATION</a>
                     </li>
                     <li class="nav-item h4">
-                        <a class="nav-link text-white">CONTACT / DEVIS</a>
+                        <a class="nav-link text-white" href="contact">CONTACT / DEVIS</a>
                     </li>
                 </ul>
             </div>
@@ -44,66 +47,178 @@
     </nav>
 
 
-    <div class="premiereecran">
-        <video autoplay muted loop id="background-video" class="fade-video">
-            <source src="photos/couple_-_77929 (1080p).mp4" type="video/mp4"> <!-- Chemin vers votre vidéo -->
-            <!-- Ajoutez d'autres balises <source> pour les différents formats -->
-        </video>
-        <div class="div1 ">
-            <div class="div11 d-flex justify-content-center align-items-center ">
-                <div>
-                    <h1 class="text-center">Borne à selfie Photobooth</h1>
-                    <h3 class="text-center">Location à Brive, Ussel et Limoges</h3>
+    <header>
+        <div class="premiereecran">
+            <video autoplay muted loop id="background-video" class="fade-video">
+                <source src="photos/couple_-_77929 (1080p).mp4" type="video/mp4"> <!-- Chemin vers votre vidéo -->
+                <!-- Ajoutez d'autres balises <source> pour les différents formats -->
+            </video>
+            <div class="div1 ">
+                <div class="div11 d-flex justify-content-center align-items-center ">
+                    <div>
+                        <h1 class="text-center">Borne à selfie Photobooth</h1>
+                        <h3 class="text-center">Location à Brive, Ussel et Limoges</h3>
+                    </div>
+                    <div class="vertical-linediv1"></div>
+                    <div>
+                        <img src="photos/Polariodtop.png" alt="Borne à selfie Photobooth"
+                            class="imagediv11 animated-from-right">
+                    </div>
                 </div>
-                <div class="vertical-linediv1"></div>
-                <div>
-                    <img src="photos/Polariodtop.png" alt="polaroid" class="imagediv11 animated-from-right">
+                <div class="div12 animated-from-right">
+                    <img src="photos/fete2.png" alt=" Photo avec Borne à selfie Photobooth"
+                        class="imagediv12 rotate-center">
+                    <img src="photos/fete3.png" alt=" Photo avec Borne à selfie Photobooth"
+                        class="imagediv12 rotate-right">
+                    <img src="photos/fete1.png" alt=" Photo avec Borne à selfie Photobooth"
+                        class="imagediv12 rotate-left">
                 </div>
             </div>
-            <div class="div12 animated-from-right">
-                <img src="photos/fete2.png" alt="" class="imagediv12 rotate-center">
-                <img src="photos/fete3.png" alt="" class="imagediv12 rotate-right">
-                <img src="photos/fete1.png" alt="" class="imagediv12 rotate-left">
 
-
+            <div class="div2 ">
+                <div class="div21" id="laborne">
+                    <div class="textdiv21 animated-from-right">
+                        <h3 style="margin-bottom: 5%;">Des photos souvenirs uniques</h3>
+                        <p>Vous êtes en train d'organiser un événement spécial tel qu'un mariage, une inauguration, une
+                            soirée d'entreprise, un dévoilement de produit, un anniversaire ou un séminaire dans la
+                            région de Limoges ? Vous recherchez une animation à la fois chaleureuse et inoubliable pour
+                            embellir votre occasion ?</p>
+                        <p>Découvrez notre solution de borne Photobooth située au cœur de Limoges. Intégrée au sein de
+                            l'espace de réception, cette borne, semblable à un photomaton, immortalise vos convives en
+                            solo ou en groupe. Chaque instant précieux de la soirée est ainsi capturé pour créer des
+                            souvenirs mémorables. Profitez de cette opportunité pour offrir une expérience amusante et
+                            créer des liens, tout en préservant des moments uniques en images. La garantie d'un
+                            divertissement assuré !</p>
+                        <p>Notre équipe à Limoges est prête à vous accompagner pour que votre événement soit
+                            inoubliable. Contactez-nous dès maintenant pour réserver la borne Photobooth et ajouter une
+                            touche spéciale à votre célébration.</p>
+                    </div>
+                    <div class="text-center animated-from-right">
+                        <img src="photos/Polaroid2.png" alt="Borne à selfie Photobooth" class="imagediv21">
+                    </div>
+                </div>
             </div>
         </div>
+    </header>
 
-        <div class="div2 ">
-            <div class="div21">
-                <div  class="textdiv21 animated-from-right">
-                    <h3 style="margin-bottom: 5%;">Des photos souvenirs uniques</h3>
-                    <p>Vous planifiez un mariage, une inauguration, une soirée d'entreprise, un dévoilement de produit,
-                        un anniversaire, un séminaire, une célébration, un événement dans la région de Limoges ?</p>
-                    <p>Êtes-vous en quête d'une animation à la fois chaleureuse et mémorable pour agrémenter votre
-                        soirée ?</p>
-                    <p>Érigée dans la même enceinte que le cocktail ou le repas, notre borne Photobooth, semblable à un
-                        photomaton, capturera les convives en solitaire ou en groupe, immortalisant ainsi la soirée et
-                        préservant de précieux souvenirs. Un gage de plaisir assuré !</p>
-                </div>
-                <div class="text-center animated-from-right">
-                    <img src="photos/Polaroid2.png" alt="polaroid" class="imagediv21">
+    <section>
+        <div class="secondecran">
+            <div class="div3">
+                <div class="horizontal-linediv3"></div>
+                <div class="video-container">
+                    <video autoplay muted loop class="videoofficiel">
+                        <source src="photos/Location Borne Selfie en Corrèze à partir de 250€ I Studio Image'In.mp4"
+                            type="video/mp4">
+                        <!-- Ajoutez d'autres balises <source> pour les différents formats -->
+                    </video>
                 </div>
             </div>
-        </div>
+
+            <div class="div6" id="FAQ">
+                <div class="horizontal-linediv3"></div>
+                <h3>FAQ</h3>
+                <div class="FAQ">
+                    <div style="width: 70%;">
+                        <h4 class="question">Quel type d'événements pouvez-vous couvrir ?</h4>
+                        <p class="answer hidden">Nous pouvons couvrir une variété d'événements spéciaux tels que des
+                            mariages,
+                            des inaugurations, des soirées
+                            d'entreprise, des dévoilements de produits, des anniversaires ou des séminaires dans la
+                            région
+                            de
+                            Limoges.</p>
+
+                        <h4 class="question">Qu'est-ce que la borne Photobooth offre pour mon événement ?</h4>
+                        <p class="answer hidden">Notre borne Photobooth, située au cœur de Limoges, ajoute une animation
+                            chaleureuse et inoubliable à votre occasion.
+                            Elle capture vos convives en solo ou en groupe, immortalisant chaque instant précieux de la
+                            soirée
+                            pour créer des
+                            souvenirs mémorables.</p>
+
+                        <h4 class="question">Comment puis-je bénéficier de cette animation Photobooth ?</h4>
+                        <p class="answer hidden">Il vous suffit de contacter notre équipe à Limoges. Nous serons ravis
+                            de vous accompagner dans la
+                            mise en place de la
+                            borne Photobooth pour rendre votre événement inoubliable.</p>
+
+                        <h4 class="question">Quels avantages cette animation apporte-t-elle ?</h4>
+                        <p class="answer hidden"> En plus de créer des souvenirs uniques en images, notre animation
+                            Photobooth offre une expérience
+                            amusante pour vos
+                            invités, favorisant ainsi la création de liens entre eux. C'est la garantie d'un
+                            divertissement
+                            assuré pour tous.</p>
+
+                        <h4 class="question">Puis-je personnaliser les impressions Photobooth ?</h4>
+                        <p class="answer hidden">Oui, vous pouvez personnaliser les impressions Photobooth avec des
+                            éléments tels que la date de
+                            l'événement, un logo
+                            personnalisé ou un message spécial pour vos invités.</p>
+
+                        <h4 class="question">Comment puis-je réserver l'animation Photobooth pour mon événement ?</h4>
+                        <p class="answer hidden">Pour réserver notre animation Photobooth à Limoges, il vous suffit de
+                            nous contacter par
+                            téléphone ou par email.
+                            Nous serons enchantés de discuter de vos besoins et de rendre votre événement mémorable.</p>
+
+                        <h4 class="question">Y a-t-il d'autres services que vous proposez pour les événements ?</h4>
+                        <p class="answer hidden">Oui, en plus de notre animation Photobooth, nous proposons d'autres
+                            services pour embellir vos
+                            événements spéciaux.
+                            Contactez-nous pour en savoir plus sur nos offres et nos options de personnalisation.</p>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div class="div4" id="reservation">
+                <div class="horizontal-linediv3"></div>
+                <h3>Effectuer une reservation</h3>
+                <iframe src="https://www.fotostudio.io/client/reservation/38667" frameborder="0"
+                    style="width: 100%; height: 100vh;"></iframe>
+            </div>
+
+            <div class="div5" id="Contact">
+                <div class="horizontal-linediv3"></div>
+                <h3>Nous contacter</h3>
+                <iframe src="https://www.fotostudio.io/lead_forms/4433" frameborder="0"
+                    style="width: 100%; height: 800px;"></iframe>
+            </div>
+    </section>
+    <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item">
+                    <NuxtLink to="/" style="text-decoration: none  !important;"><a href="#"
+                            class="nav-link px-2 text-muted">Accueil</a></NuxtLink>
+                </li>
+                <li class="nav-item" style="text-decoration: none  !important;"><a href="https://www.studioimagein.com/"
+                        class="nav-link px-2 text-muted">Notre site officiel</a></li>
+                <li class="nav-item"> <a href="#laborne" class="nav-link px-2 text-muted">La borne à selfie</a>
+                    </NuxtLink>
+                </li>
+                <li class="nav-item"> <a href="FAQ" class="nav-link px-2 text-muted">FAQ</a></NuxtLink>
+                </li>
+                <li class="nav-item"><a href="#reservation" class="nav-link px-2 text-muted">Réservation</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link px-2 text-muted">Contact</a></li>
+            </ul>
+            <p>La borne à selfie, location sur Brive, Ussel et Limoges </p>
+            <p class="text-center text-muted">&copy; 2023, <a href="mailto:bastienvillegas.ca@gmail.com">Bastien
+                    VILLEGAS</a></p>
+        </footer>
+
     </div>
 
 
-    <div class="secondecran">
-        <video autoplay muted loop id="background-video2" class="fade-video">
-            <source src="photos/video1.mp4" type="video/mp4"> <!-- Chemin vers votre vidéo -->
-            <!-- Ajoutez d'autres balises <source> pour les différents formats -->
-        </video>
-        <div class="div3">
-
-        </div>
-        <div class="div4"> </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script>
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
 
 </body>
 

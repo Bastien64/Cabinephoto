@@ -1,5 +1,6 @@
-#background-video,
-#background-video2 {
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+#background-video {
     position: absolute;
     top: 0;
     left: 0;
@@ -34,9 +35,6 @@ h3 {
     transition: filter 10s ease;
 }
 
-#background-video2 {
-    transition: filter 5s ease;
-}
 
 
 .blurred {
@@ -49,6 +47,12 @@ h3 {
 .navbar-brand {
     margin-left: 40%!important;
 }
+.navbar {
+    background-color: #575A6D !important; 
+    max-height: 100px;
+}
+
+
 /*FIN NAVBAR*/
 .premiereecran {
     width: 100%;
@@ -109,7 +113,7 @@ h3 {
 .div2 {
     margin-top: 40%;
     width: 100%;
-    height: 50vh;
+    height: 90vh;
     background-color: #ffffff;
     opacity: 1;
     position: absolute;
@@ -125,6 +129,7 @@ h3 {
     align-items: center;
     text-align: center; /* Centrage du texte */
     margin-left: 10%;
+
 }
 .imagediv21{
     width: 40%;
@@ -141,33 +146,73 @@ h3 {
     width: 100%;
     height: 150vh;
     position: relative;
+    top: 80vh;
+    display: flex;
+    flex-direction: column;
 }
+.horizontal-linediv3 {
+    border-bottom: 10px solid #F69515; /* Couleur et épaisseur de la ligne */
+    width: 30%; /* Hauteur fixe de la ligne */
+    margin: auto;
+    margin-bottom: 5%;
 
+}
 
 .div3 {
-    margin-top: 10%;
     width: 100%;
-    height: 50vh;
-    background-color: #ffffff;
-    opacity: 1;
-    position :relative;
-    top: 80vh;
+    height: auto;
+    background-color:white;
+    margin-top: 5%;
     left: 0;
 
 }
 
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
 
-.div4 {
-    margin-top: 20%;
+}
+
+.videoofficiel {
+    max-width: 70%;
+    height: auto;
+    opacity: 0.9;
+}
+
+.div4, .div5, .div6 {
     width: 100%;
-    height: 50vh;
-    background-color: #ffffff;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
     opacity: 1;
-    position: absolute;
-    top: 80vh;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     left: 0;
 
-}}
+}
+h4 {
+    margin-top: 3%;
+}
+.hidden {
+    display: none;
+}
+.FAQ {
+    display: flex ;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.div6 {
+    background-image: url("photos/No-Picture-250x250.png");
+    background-position:80% 80%;
+    background-repeat: no-repeat;
+}
+}
 @media only screen and (max-width: 767px) { 
 
 /*ANIMATION*/
@@ -187,27 +232,27 @@ h3 {
     transition: filter 10s ease;
 }
 
-#background-video2 {
-    transition: filter 5s ease;
-}
 
 
 .blurred {
     filter: brightness(10%); /* Ajustez la valeur pour contrôler l'effet de blanchiment */
 }
 /*FIN ANIMATION*/
-    .animated-from-right {
-        opacity: 0; /* Commence par être invisible */
-        transform: translateX(50px); /* Décalage initial vers la droite */
-        transition: opacity 1s, transform 1s; /* Animation de 1 seconde avec transition */
-    }
-    
-    /* Lorsque l'élément est dans la vue (scroll), appliquez l'animation */
-    .animated-from-right.animate {
-        opacity: 1;
-        transform: translateX(0);
-    }
+
     /*FIN ANIMATION*/
+
+    /*NAVBAR*/
+
+.navbar-brand {
+    margin-left: 40%!important;
+}
+.navbar {
+    background-color: #575A6D !important; 
+
+}
+
+
+/*FIN NAVBAR*/
     .premiereecran {
         width: 100%;
         height: 100vh;
@@ -267,7 +312,7 @@ h3 {
     .div2 {
         margin-top: 1%;
         width: 100%;
-        height: 100vh;
+        height: 120vh;
         background-color: #ffffff;
         opacity: 1;
         position: absolute;
@@ -296,34 +341,72 @@ h3 {
     
     
     /* SECOND ECRAN MILLIONAIRE */
-    .secondecran {
-        width: 100%;
-        height: 150vh;
-        position: relative;
-    }
-    
-    
-    .div3 {
-        margin-top: 10%;
-        width: 100%;
-        height: 50vh;
-        background-color: #ffffff;
-        opacity: 1;
-        position :relative;
-        top: 80vh;
-        left: 0;
-    
-    }
-    
-    
-    .div4 {
-        margin-top: 20%;
-        width: 100%;
-        height: 50vh;
-        background-color: #ffffff;
-        opacity: 1;
-        position: absolute;
-        top: 80vh;
-        left: 0;
-    
-    }}
+    /* SECOND ECRAN MILLIONAIRE */
+.secondecran {
+    width: 100%;
+    height: 150vh;
+    position: relative;
+    top: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.horizontal-linediv3 {
+    border-bottom: 10px solid #F69515; /* Couleur et épaisseur de la ligne */
+    width: 30%; /* Hauteur fixe de la ligne */
+    margin: auto;
+    margin-bottom: 5%;
+
+}
+
+.div3 {
+    width: 100%;
+    height: auto;
+    background-color:white;
+    margin-top: 0%;
+    left: 0;
+
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+
+}
+
+.videoofficiel {
+    max-width: 100%;
+    height: auto;
+    opacity: 0.9;
+}
+
+.div4, .div5, .div6 {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    left: 0;
+
+}
+h4 {
+    margin-top: 3%;
+}
+.hidden {
+    display: none;
+}
+.FAQ {
+    display: flex ;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.div6 {
+
+}}
