@@ -212,6 +212,7 @@ h4 {
     background-position:80% 80%;
     background-repeat: no-repeat;
 }
+
 }
 @media only screen and (max-width: 767px) { 
 
@@ -406,7 +407,4 @@ h4 {
     justify-content: center;
     align-items: center;
 }
-
-.div6 {
-
-}}
+}
