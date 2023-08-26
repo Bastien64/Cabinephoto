@@ -21,7 +21,7 @@ h5 {
 
 /* PREMIER ECRAN MARIAGE */
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 950px) {
 /*ANIMATION*/
 .animated-from-right {
     opacity: 0; /* Commence par être invisible */
@@ -235,39 +235,245 @@ h4 {
 h5 {
     text-align: center;
 }
-
-.wrapper {
-    width: 500px;
-    height: 500px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 5px;
-    background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
-    overflow: hidden;
-  }
-  
-  .wave {
-    width: 1000px;
-    height: 1025px;
-    position: absolute;
-    top: -25%;
-    left: 50%;
-    margin-left: -500px;
-    margin-top: -500px;
-    border-radius: 35%;
-    background: rgba(255, 255, 255, .75);
-    animation: wave 15s infinite linear;
-  }
-  
-  @keyframes wave {
-    from { transform: rotate(0deg);}
-    from { transform: rotate(360deg);}
-  }
-  
+.photoscabines {
+    width: 50%;
+    margin-top: 2%;
 }
-@media only screen and (max-width: 767px) { 
+}
+@media only screen and (max-width: 949px) and (min-width: 501px) { 
+    /*ANIMATION*/
+    .animated-fade-in {
+        opacity: 0;
+        animation: fade-in 2s ease-in-out forwards;
+    }
+    
+    @keyframes fade-in {
+        from {
+            opacity: 0.5;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    .animated-slide-up {
+        transform: translateY(100px);
+        animation: slide-up 2s ease-in-out forwards;
+    }
+    
+    @keyframes slide-up {
+        from {
+            transform: translateY(100px);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+    
+    /* Lorsque l'élément est dans la vue (scroll), appliquez l'animation */
+    .animated-from-right.animate {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+    #background-video {
+        transition: filter 10s ease;
+    }
+    
+    
+    
+    .blurred {
+        filter: brightness(10%); /* Ajustez la valeur pour contrôler l'effet de blanchiment */
+    }
+    /*FIN ANIMATION*/
+    
+        /*FIN ANIMATION*/
+    
+        /*NAVBAR*/
+    
+    .navbar-brand {
+        margin-left: 40%!important;
+    }
+    .navbar {
+        background-color: #575A6D !important; 
+    
+    }
+    
+    
+    /*FIN NAVBAR*/
+        .premiereecran {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+        
+        .div1 {
+            padding: 5%;
+            width: 100%;
+            height: 60vh;
+            background-color: #ffffff;
+            opacity: 1;
+            top: 0;
+            left: 0;
+        
+        }
+        
+        
+        .div11 {
+            display: flex;
+            flex-direction: row;
+        
+        }
+        
+        .imagediv11 {
+            width: 70%;
+            height: auto;
+            margin-left: 20%;
+        }
+        
+        .vertical-linediv1 {
+                border-right: 5px solid #F69515; /* Couleur et épaisseur de la ligne */
+                height: 100px; /* Hauteur fixe de la ligne */
+                margin: 0 20px; /* Marge à gauche et à droite de la ligne */
+            
+        }
+        .imagediv12 {
+            width: 30%;
+            height: auto;
+            margin-top: 8%;
+            margin-left: 2%;
+            border: 2px solid white; /* Bordure blanche de 2px */
+            padding: 5px;
+            background-color: white;
+            box-shadow: 1px 2px 2px 2px #00000028; /* Ombre portée de 2px */
+        }
+        .rotate-left {
+            transform: rotate(-20deg); /* Rotation de -20 degrés (gauche) */
+        }
+        .rotate-center {
+            transform: rotate(-20deg); /* Rotation de -20 degrés (gauche) */
+        }
+        .rotate-right {
+            transform: rotate(20deg); /* Rotation de 20 degrés (droite) */
+        }
+        
+        .div2 {
+            margin-top: 2%;
+            width: 100%;
+            height: 80vh;
+            background-color: #ffffff;
+            opacity: 1;
+            position: absolute;
+            top: 80vh;
+            display: flex;
+        
+        
+        }
+        .div21 {
+            display: flex;
+            flex-direction: row ; /* Ajustement pour aligner le contenu verticalement */
+            justify-content: center;
+            align-items: center;
+            text-align: center; /* Centrage du texte */
+            margin-left: 2%;
+        }
+    
+        .textdiv21 {
+            width: 100%;
+            font-size: medium;
+        }
+        .imagediv21{
+            width: 60%;
+            height: auto;
+        
+        }
+        
+        
+        /* SECOND ECRAN MILLIONAIRE */
+        /* SECOND ECRAN MILLIONAIRE */
+    .secondecran {
+        width: 100%;
+        height: 150vh;
+        position: relative;
+        top: 80vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .horizontal-linediv3 {
+        border-bottom: 10px solid #F69515; /* Couleur et épaisseur de la ligne */
+        width: 30%; /* Hauteur fixe de la ligne */
+        margin: auto;
+        margin-bottom: 5%;
+    
+    }
+    
+    .div3 {
+        width: 100%;
+        height: auto;
+        background-color:white;
+        margin-top: 0%;
+        left: 0;
+    
+    }
+    
+    .video-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+    
+    }
+    
+    .videoofficiel {
+        max-width: 100%;
+        height: auto;
+        opacity: 0.9;
+    }
+    
+    .div4, .div5, .div6, .div7 {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(255, 255, 255);
+        opacity: 1;
+        margin-top: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        left: 0;
+    
+    }
+    h4 {
+        margin-top: 3%;
+    }
+    .hidden {
+        display: none;
+    }
+    .FAQ {
+        display: flex ;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .div7 {
+        margin-top: 5%;
+        width: 100%;
+        height: 150vh;
+    }
+    .photoscabines {
+        width: 90%;
+        margin-top: 2%;
+    }
+    .carddiv7custom {
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.295);
+    }
+    .custom-card {
+        border: none; /* Supprime la bordure */
+    }}
+
+
+@media only screen and (max-width: 500px) { 
 
 /*ANIMATION*/
 .animated-fade-in {
@@ -488,6 +694,10 @@ h4 {
     margin-top: 5%;
     width: 100%;
     height: 150vh;
+}
+.photoscabines {
+    width: 90%;
+    margin-top: 2%;
 }
 .carddiv7custom {
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.295);
