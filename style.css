@@ -480,10 +480,11 @@ h5 {
 
 @media only screen and (max-width: 500px) { 
 
+ 
 /*ANIMATION*/
 .animated-fade-in {
     opacity: 0;
-    animation: fade-in 2s ease-in-out forwards;
+    animation: fade-in 4s ease-in-out forwards;
 }
 
 @keyframes fade-in {
