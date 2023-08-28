@@ -47,3 +47,6 @@ questions.forEach(question => {
         answer.classList.toggle('hidden');
     });
 });
+
+const video = document.getElementById('myVideo'); // Récupérer l'élément vidéo
+    video.playbackRate = 1.2; // Modifier la vitesse de lecture (1.0 = vitesse normale)
