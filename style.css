@@ -537,14 +537,14 @@ h5 {
 /*FIN NAVBAR*/
     .premiereecran {
         width: 100%;
-        height: 100vh;
+        height: 120vh;
         position: relative;
     }
     
     .div1 {
         padding: 5%;
         width: 100%;
-        height: 40vh;
+        height: 50vh;
         background-color: #ffffff;
         opacity: 1;
         top: 0;
@@ -598,12 +598,12 @@ h5 {
         background-color: #ffffff;
         opacity: 1;
         position: absolute;
-        top: 60vh;
+        top: 70vh;
         display: flex;
         background-image: url("photos/borneselfietransparent2.png");
         background-position:50% 0%;
         background-repeat: repeat;
-        background-size :5%;
+        background-size :2%;
     
     
     }
