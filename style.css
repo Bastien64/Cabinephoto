@@ -247,6 +247,12 @@ h4 {
     justify-content: space-around;
 
 }
+.custom-card {
+    width: 25rem; 
+    margin-right: 25px!important;
+    border: none; /* Supprime la bordure */
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.295);
+}
 
 h5 {
     text-align: center;
@@ -496,7 +502,10 @@ h5 {
         box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.295);
     }
     .custom-card {
+        width: 18rem; 
+        margin-right: 25px!important;
         border: none; /* Supprime la bordure */
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.295);
     }
 
     .horizontal-linediv4 {
@@ -777,4 +786,6 @@ h4 {
 }
 .custom-card {
     border: none; /* Supprime la bordure */
+    width: 18rem; margin-right: 25px!important;
+    
 }}
