@@ -1,15 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
 
-#background-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
-
 h3 {
     font-weight: bold;
 }
@@ -27,6 +17,15 @@ h5 {
 /* PREMIER ECRAN MARIAGE */
 
 @media only screen and (min-width: 950px) {
+    .video-container {
+        overflow: hidden;
+        display: block;
+        height: 30vh;
+    }
+
+    
+    
+    
 /*ANIMATION*/
 .animated-from-right {
     opacity: 0; /* Commence par être invisible */
@@ -72,7 +71,7 @@ h5 {
 .div1 {
     padding: 2%;
     width: 100%;
-    height: 115vh;
+    height: auto;
     background-color: #ffffff;
     opacity: 1;
     top: 0;
@@ -120,13 +119,12 @@ h5 {
 }
 
 .div2 {
-    margin-top: 40%;
+
     width: 100%;
-    height: 90vh;
+    height: auto;
     background-color: #ffffff;
     opacity: 1;
-    position: absolute;
-    top: 70vh;
+
     display: flex;
 
 
@@ -141,7 +139,7 @@ h5 {
 
 }
 .imagediv21{
-    width: 40%;
+    width: 50%;
     height: auto;
 
 }
@@ -153,9 +151,9 @@ h5 {
 /* SECOND ECRAN MILLIONAIRE */
 .secondecran {
     width: 100%;
-    height: 150vh;
-    position: relative;
-    top: 80vh;
+    height: auto;
+
+
     display: flex;
     flex-direction: column;
 }
@@ -176,7 +174,7 @@ h5 {
 
 }
 
-.video-container {
+.video2-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -192,10 +190,10 @@ h5 {
 
 .div4, .div5, .div6, .div7 {
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-color: rgb(255, 255, 255);
     opacity: 1;
-    margin-top: 5%;
+    margin-top: 2%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -214,7 +212,7 @@ h4 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.5);
+
 }
 
 .div6 {
@@ -222,7 +220,18 @@ h4 {
     background-position:10% 20%;
     background-repeat: no-repeat;
 }
-
+.question, .answer {
+    background-color: white;
+}
+#exempleborne:hover {
+    transform: scale(1.1); /* Agrandit l'image de 10% */
+    filter: brightness(1.2); /* Augmente la luminosité */
+  }
+#exempleborne {
+    width: 50%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
 .div7 {
     background-image: url("photos/etiquette-de-prix.png");
     background-position:80% 80%;
@@ -244,8 +253,22 @@ h5 {
     width: 50%;
     margin-top: 2%;
 }
+
+.horizontal-linediv4 {
+    border-bottom: 10px solid #F69515; /* Couleur et épaisseur de la ligne */
+    width: 5%; /* Hauteur fixe de la ligne */
+    margin: auto;
+    margin-bottom: 5%;
+
 }
-@media only screen and (max-width: 949px) and (min-width: 501px) { 
+}
+@media only screen and (max-width: 949px) and (min-width: 501px) {
+    .video-container {
+        overflow: hidden;
+        display: block;
+        height: 20vh;
+    }
+ 
     /*ANIMATION*/
     .animated-fade-in {
         opacity: 0;
@@ -306,16 +329,12 @@ h5 {
     
     
     /*FIN NAVBAR*/
-        .premiereecran {
-            width: 100%;
-            height: 100vh;
-            position: relative;
-        }
+
         
         .div1 {
             padding: 5%;
             width: 100%;
-            height: 60vh;
+            height: auto;
             background-color: #ffffff;
             opacity: 1;
             top: 0;
@@ -338,7 +357,7 @@ h5 {
         
         .vertical-linediv1 {
                 border-right: 5px solid #F69515; /* Couleur et épaisseur de la ligne */
-                height: 100px; /* Hauteur fixe de la ligne */
+                height: 200px; /* Hauteur fixe de la ligne */
                 margin: 0 20px; /* Marge à gauche et à droite de la ligne */
             
         }
@@ -365,11 +384,10 @@ h5 {
         .div2 {
             margin-top: 2%;
             width: 100%;
-            height: 80vh;
+            height: auto;
             background-color: #ffffff;
             opacity: 1;
-            position: absolute;
-            top: 80vh;
+
             display: flex;
         
         
@@ -398,9 +416,8 @@ h5 {
         /* SECOND ECRAN MILLIONAIRE */
     .secondecran {
         width: 100%;
-        height: 150vh;
-        position: relative;
-        top: 80vh;
+        height: auto;
+
         display: flex;
         flex-direction: column;
     }
@@ -437,7 +454,7 @@ h5 {
     
     .div4, .div5, .div6, .div7 {
         width: 100%;
-        height: 100vh;
+        height: auto;
         background-color: rgb(255, 255, 255);
         opacity: 1;
         margin-top: 5%;
@@ -450,6 +467,9 @@ h5 {
     }
     h4 {
         margin-top: 3%;
+    }
+    .question, .answer {
+        background-color: white;
     }
     .hidden {
         display: none;
@@ -464,7 +484,7 @@ h5 {
     .div7 {
         margin-top: 5%;
         width: 100%;
-        height: 150vh;
+        height: auto;
     }
     .photoscabines {
         width: 90%;
@@ -475,12 +495,24 @@ h5 {
     }
     .custom-card {
         border: none; /* Supprime la bordure */
+    }
+
+    .horizontal-linediv4 {
+        border-bottom: 10px solid #F69515; /* Couleur et épaisseur de la ligne */
+        width: 5%; /* Hauteur fixe de la ligne */
+        margin: auto;
+        margin-bottom: 5%;
+    
     }}
 
 
 @media only screen and (max-width: 500px) { 
 
- 
+    .video-container {
+        overflow: hidden;
+        display: block;
+        height: 30vh;
+    }
 /*ANIMATION*/
 .animated-fade-in {
     opacity: 0;
@@ -541,16 +573,12 @@ h5 {
 
 
 /*FIN NAVBAR*/
-    .premiereecran {
-        width: 100%;
-        height: 120vh;
-        position: relative;
-    }
+
     
     .div1 {
         padding: 5%;
         width: 100%;
-        height: 80vh;
+        height: auto;
         background-color: #ffffff;
         opacity: 1;
         top: 0;
@@ -611,11 +639,10 @@ h5 {
     .div2 {
         margin-top: 0%;
         width: 100%;
-        height: 150vh;
+        height: auto;
         background-color: #ffffff;
         opacity: 1;
-        position: absolute;
-        top: 100vh;
+
         display: flex;
         background-image: url("photos/borneselfietransparent2.png");
         background-position:50% 0%;
@@ -648,9 +675,8 @@ h5 {
     /* SECOND ECRAN MILLIONAIRE */
 .secondecran {
     width: 100%;
-    height: 150vh;
-    position: relative;
-    top: 120vh;
+    height: auto;
+
     display: flex;
     flex-direction: column;
 }
@@ -672,7 +698,7 @@ h5 {
 
 }
 
-.video-container {
+.video2-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -688,9 +714,9 @@ h5 {
 
 .div4, .div5, .div6, .div7 {
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-color: rgb(255, 255, 255);
-    opacity: 1;
+
     margin-top: 5%;
     display: flex;
     justify-content: center;
@@ -717,16 +743,30 @@ h4 {
     background-position:200% 100%;
     background-repeat: no-repeat;
 }
+.question, .answer {
+    background-color: rgba(255, 255, 255, 0.726);
+}
+.horizontal-linediv4 {
+    border-bottom: 10px solid #F69515; /* Couleur et épaisseur de la ligne */
+    width: 5%; /* Hauteur fixe de la ligne */
+    margin: auto;
+    margin-bottom: 5%;
 
-
+}
 .div7 {
     margin-top: 5%;
     width: 100%;
-    height: 150vh;
+    height: auto;
+
+}
+
+#exempleborne {
+    width: 100%;
+    height: auto;
 
 }
 .photoscabines {
-    width: 90%;
+    width: 100%;
     margin-top: 2%;
 }
 .carddiv7custom {
