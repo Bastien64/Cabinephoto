@@ -169,8 +169,8 @@ h5 {
     width: 100%;
     height: auto;
     background-color:white;
-    margin-top: 5%;
-    left: 0;
+
+    margin-bottom: 2%;
 
 }
 
@@ -178,7 +178,7 @@ h5 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5%;
+
 
 }
 
@@ -193,6 +193,7 @@ h5 {
     height: auto;
     background-color: rgb(255, 255, 255);
     opacity: 1;
+    margin-bottom: 2%;
     margin-top: 2%;
     display: flex;
     justify-content: center;
@@ -212,6 +213,7 @@ h4 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2%;
 
 }
 
