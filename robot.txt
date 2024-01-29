@@ -1,1 +1,1 @@
-Sitemap: https://borneselfiecorreze.com/sitemap.xml
+Sitemap: https://www.example.com/sitemap.xml
